@@ -8,13 +8,14 @@ Untuk menjalankan aplikasi sederhana ini cukup mudah, yang harus dilakukan adala
     - Run Project selesai
 
 ```sql
-CREATE TABLE Person(
-   personId int (30) NOT NULL,
-   firstName varchar (30) NOT NULL,
-   middleName varchar (30) NOT NULL,
-   lastName varchar (30) NOT NULL,
-   email varchar (30) NOT NULL,
-   phone varchar (30) NOT NULL,
-   PRIMARY KEY (personId)
-);
+CREATE SCHEMA `javalat` ;
+
+CREATE TABLE `javalat`.`employees` (
+  `employee_id` INT NOT NULL AUTO_INCREMENT,
+  `full_name` VARCHAR(75) NULL,
+  `gender` VARCHAR(45) NULL,
+  `department` VARCHAR(45) NULL,
+  `position` VARCHAR(45) NULL,
+  `salary` DOUBLE NULL,
+  PRIMARY KEY (`employee_id`));
 ```
